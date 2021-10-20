@@ -16,4 +16,6 @@ public class ForEachDemo {
 			System.out.println(n);
 		}
 	}
+	
+	
 }
