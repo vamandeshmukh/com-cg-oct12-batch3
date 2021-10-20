@@ -10,12 +10,22 @@ public class Methods {
 		return 10;
 	}
 
+	static double pi() {
+		return 3.142;
+	}
+
+//	static Methods getObject() {
+//		return new Methods();
+//	}
+
 	public static void main(String[] args) {
 		System.out.println("main");
+
 		Methods.m1();
+//		int i = Methods.m1(); // CE 
+
 		int output = Methods.num();
 		System.out.println(output);
-
 		System.out.println(Methods.num());
 
 	}
