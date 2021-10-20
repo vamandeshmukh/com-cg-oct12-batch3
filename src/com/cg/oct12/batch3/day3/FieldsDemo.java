@@ -4,6 +4,7 @@ public class FieldsDemo {
 
 	// static field
 	static int num1;
+
 	// non static field
 	int num2;
 
