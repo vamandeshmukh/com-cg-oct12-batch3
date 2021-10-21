@@ -9,8 +9,7 @@ package com.cg.oct12.batch3.day4;
  * by default JVM provides a zero-args constructor 
  * we also can define constructors 
  * but if we define a constructor, JVM will not provide any constructor
- * a class can have one or more constructors  
- * 
+ * a class can have one or more constructors    
  */
 
 class Employee {
