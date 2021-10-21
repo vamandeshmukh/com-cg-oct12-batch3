@@ -1,7 +1,7 @@
 package com.cg.oct12.batch3.day4;
 
 /*
- * final keyword - specifier 
+ * final keyword - access specifier 
  * final field / variable - value can not be changed 
  * final method - can not be overridden 
  * final class - can not be extended 
