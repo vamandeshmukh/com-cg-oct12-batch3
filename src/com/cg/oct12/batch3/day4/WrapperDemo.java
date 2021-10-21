@@ -5,7 +5,6 @@ public class WrapperDemo {
 	public static void main(String[] args) {
 
 		int num = 10;
-
 		Integer num2 = 20;
 
 		String s1 = "10", s2 = "20";
