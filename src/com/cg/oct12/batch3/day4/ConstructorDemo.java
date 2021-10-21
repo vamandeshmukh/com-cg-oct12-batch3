@@ -21,7 +21,6 @@ class Employee {
 
 	public Employee() {
 		System.out.println("zero-args constructor");
-
 	}
 
 	public Employee(int eid, String name, double salary) {
