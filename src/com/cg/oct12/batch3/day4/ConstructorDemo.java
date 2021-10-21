@@ -20,6 +20,7 @@ class Employee {
 	double salary;
 
 	public Employee() {
+		super();
 		System.out.println("zero-args constructor");
 	}
 
