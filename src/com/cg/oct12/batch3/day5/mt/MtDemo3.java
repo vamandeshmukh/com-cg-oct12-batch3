@@ -1,6 +1,6 @@
 package com.cg.oct12.batch3.day5.mt;
 
-public class MtDemo extends Thread {
+public class MtDemo3 implements Runnable {
 
 	public void myLoop() {
 		for (int i = 1; i <= 10; i++) {
@@ -20,14 +20,17 @@ public class MtDemo extends Thread {
 
 	public static void main(String[] args) {
 
-		MtDemo obj = new MtDemo();
-//		obj.myLoop();
+		Thread obj = new Thread(new MtDemo3());
 		obj.start();
-		MtDemo obj2 = new MtDemo();
-//		obj2.myLoop();
+		try {
+			obj.join();
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+		Thread obj2 = new Thread(new MtDemo3());
 		obj2.start();
-		MtDemo obj3 = new MtDemo();
-//		obj3.myLoop();
+		Thread obj3 = new Thread(new MtDemo3());
 		obj3.start();
+
 	}
 }
