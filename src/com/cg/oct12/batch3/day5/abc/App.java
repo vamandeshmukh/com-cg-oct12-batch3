@@ -18,6 +18,11 @@ package com.cg.oct12.batch3.day5.abc;
 // can contain zero or more concrete methods 
 // can also contain both 
 
+// interface 
+// mainly contain abstract methods 
+// from java 8, also contain static and default methods 
+// allow multiple inheritance in java 
+
 interface FinanceMinistry {
 
 	public abstract void payInterestOnDeposits();
