@@ -10,10 +10,14 @@ public class Employee {
 
 	private int eid;
 	private String firstName;
-	private double salary = 8000; // read-only field
+	private double salary = 8000; // read-only + writable field
 
 	public double getSalary() {
 		return this.salary;
+	}
+
+	public void setSalary(double salary) {
+		this.salary = salary;
 	}
 
 }
