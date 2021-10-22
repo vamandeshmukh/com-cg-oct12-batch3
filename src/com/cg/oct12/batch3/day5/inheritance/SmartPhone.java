@@ -5,6 +5,7 @@ public class SmartPhone extends FeaturePhone { // multilevel inheritance
 		System.out.println("Snap a pic");
 	}
 
+	@Override
 	void music() {
 		System.out.println("Play music with Dolby");
 	}
