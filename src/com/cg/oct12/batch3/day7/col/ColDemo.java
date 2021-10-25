@@ -1,6 +1,7 @@
 package com.cg.oct12.batch3.day7.col;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 
 public class ColDemo {
 
@@ -31,6 +32,10 @@ public class ColDemo {
 		myList2.add("www");
 		System.out.println(myList2);
 		System.out.println(myList2.size());
+		
+		
+		
+		
 
 	}
 }
