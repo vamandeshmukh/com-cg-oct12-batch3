@@ -1,4 +1,4 @@
-package com.cg.oct12.batch3.day7;
+package com.cg.oct12.batch3.day7.reg;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
