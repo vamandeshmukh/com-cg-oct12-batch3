@@ -2,8 +2,6 @@ package com.cg.oct12.batch3.day7.col;
 
 import java.util.ArrayList;
 
-import com.cg.oct12.batch3.day7.App;
-
 public class ColDemo {
 
 	public static void main(String[] args) {
@@ -29,7 +27,7 @@ public class ColDemo {
 		ArrayList myList2 = new ArrayList();
 		myList2.add(22);
 //		myList2.add(myList); // comment out the next line 
-		myList2.addAll(myList); // comment out the previous line 
+		myList2.addAll(myList); // comment out the previous line
 		myList2.add("www");
 		System.out.println(myList2);
 		System.out.println(myList2.size());
