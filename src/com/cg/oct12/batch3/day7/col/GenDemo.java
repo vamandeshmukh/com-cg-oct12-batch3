@@ -3,6 +3,8 @@ package com.cg.oct12.batch3.day7.col;
 import java.util.ArrayList;
 import java.util.Iterator;
 
+import com.cg.oct12.batch3.day5.Employee;
+
 public class GenDemo {
 
 	public static void main(String[] args) {
@@ -22,6 +24,8 @@ public class GenDemo {
 //		myMarks.add("abc");
 		myMarks.add(25);
 		System.out.println(myMarks);
+
+//		ArrayList<Employee> empList = new ArrayList<>();
 
 	}
 
