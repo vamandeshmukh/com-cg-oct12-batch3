@@ -1,11 +1,18 @@
 package com.cg.oct12.batch3.day8.fun;
 
 // interface can contain - 0 or more - abstract, static and default methods 
+
+// functional interface - it contains only one abstract method. 
+// it may contain 0 or more default and static methods. 
+
+@FunctionalInterface
 public interface FunIn {
 
-	public abstract void abstractMethod();
+	public abstract void functionalMethod();
 
-	public abstract void anotherAbstractMethod();
+//	 public abstract void abstractMethod();
+
+//	public abstract void anotherAbstractMethod();
 
 //	public default void defaultMethod() {
 //		System.out.println("defaultMethod");
