@@ -5,7 +5,7 @@ import java.util.Iterator;
 
 import com.cg.oct12.batch3.day5.Employee;
 
-public class GenDemo {
+public class GenDemo { 
 
 	public static void main(String[] args) {
 
