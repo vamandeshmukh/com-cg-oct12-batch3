@@ -33,7 +33,7 @@ public class StreamDemo {
 		// using filter() to get specified data
 		System.out.println("\nUsing filter() to get specified data ");
 
-		Stream<Employee> employeesWithMoreSalary = empStream.filter(e -> e.salary > 19000);
+		Stream<Employee> employeesWithMoreSalary = empStream.filter((e) -> e.salary > 15000);
 
 		employeesWithMoreSalary.forEach(e -> System.out.println(e));
 
