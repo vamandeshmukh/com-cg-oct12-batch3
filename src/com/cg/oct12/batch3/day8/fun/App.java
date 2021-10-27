@@ -1,7 +1,10 @@
 package com.cg.oct12.batch3.day8.fun;
 
 // 3. abstract method usage - using lambda expression (only with functional interface)
-
+// functional interface - it contains only one abstract method. 
+// it may contain 0 or more default and static methods. 
+// reference - https://docs.google.com/document/d/1QGOd13zp3cZDRvAWAh8NUseEq3xUZJSt4Vg4gIelwfE/edit?usp=sharing 
+ 
 public class App {
 	public static void main(String[] args) {
 
