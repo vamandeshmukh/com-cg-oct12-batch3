@@ -32,25 +32,34 @@ public class Employee {
 	@Override
 	public boolean equals(Object obj) {
 		if (this == obj) {
+			System.out.println("1");
 			return true;
 		}
 		if (!(obj instanceof Employee)) {
+			System.out.println("2");
 			return false;
 		}
 		Employee other = (Employee) obj;
 		if (eid != other.eid) {
+			System.out.println("3");
 			return false;
 		}
 		if (name == null) {
+			System.out.println("4");
+
 			if (other.name != null) {
+				System.out.println("5");
 				return false;
 			}
 		} else if (!name.equals(other.name)) {
+			System.out.println("6");
 			return false;
 		}
 		if (Double.doubleToLongBits(salary) != Double.doubleToLongBits(other.salary)) {
+			System.out.println("7");
 			return false;
 		}
+		System.out.println("8");
 		return true;
 	}
 
