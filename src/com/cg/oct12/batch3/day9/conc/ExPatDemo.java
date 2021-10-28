@@ -2,13 +2,13 @@ package com.cg.oct12.batch3.day9.conc;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
-import java.util.concurrent.ScheduledExecutorService;
+//import java.util.concurrent.ScheduledExecutorService;
 
 public class ExPatDemo implements Runnable {
 
 	@Override
 	public void run() {
-		for (int i = 0; i <= 10; i++) {
+		for (int i = 1; i <= 10; i++) {
 			System.out.println("run " + Thread.currentThread().getName() + " " + i);
 		}
 	}
@@ -24,17 +24,17 @@ public class ExPatDemo implements Runnable {
 		ExPatDemo exp = new ExPatDemo();
 //
 ////        	 1. Using newSingleThreadExecutor
-		ExecutorService exService = Executors.newSingleThreadExecutor();
+//		ExecutorService exService = Executors.newSingleThreadExecutor();
 //
 ////        	2. Using newCachedThreadPool
-////        	ExecutorService exService = Executors.newCachedThreadPool();
-//
+//		ExecutorService exService = Executors.newCachedThreadPool();
+
 ////        	3. Using newFixedThreadPool
-////        	ExecutorService exService = Executors.newFixedThreadPool(3);
+//		ExecutorService exService = Executors.newFixedThreadPool(3); // number 
 //
 ////        	4. Using newScheduledThreadPool
-////        	ExecutorService exService = Executors.newScheduledThreadPool(2);
-////        	ScheduledExecutorService exService = Executors.newScheduledThreadPool(2);
+		ExecutorService exService = Executors.newScheduledThreadPool(2);
+//		ScheduledExecutorService exService = Executors.newScheduledThreadPool(2);
 //
 		for (int i = 1; i <= 10; i++) {
 			exService.execute(exp);
@@ -51,6 +51,6 @@ public class ExPatDemo implements Runnable {
 //		 * https://stackoverflow.com/questions/16122987/reason-for-calling-shutdown-on-executorservice
 //		 */
 //
-//		exService.shutdown();
+		exService.shutdown();
 	}
 }
