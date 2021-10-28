@@ -13,8 +13,8 @@ public class CallableWithArguments {
 		DemoClass demoClass = new DemoClass(10);
 		demoClass.setNum(15);
 		ExecutorService ex = Executors.newSingleThreadExecutor();
-		Future<Integer> f = ex.submit(demoClass);
-		Integer result = f.get();
+		Future<Integer> f = ex.submit(demoClass); // constructor injection
+		Integer result = f.get();// setter injection
 		System.out.println(result);
 		ex.shutdown();
 		System.out.println("End");
