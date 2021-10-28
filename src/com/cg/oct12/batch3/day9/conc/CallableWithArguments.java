@@ -10,11 +10,11 @@ public class CallableWithArguments {
 	public static void main(String[] args) throws InterruptedException, ExecutionException {
 
 		System.out.println("Start");
-		DemoClass demoClass = new DemoClass(10);
-		demoClass.setNum(15);
+		DemoClass demoClass = new DemoClass(); // constructor injection
+//		demoClass.setNum(15); // setter injection
 		ExecutorService ex = Executors.newSingleThreadExecutor();
-		Future<Integer> f = ex.submit(demoClass); // constructor injection
-		Integer result = f.get();// setter injection
+		Future<Integer> f = ex.submit(demoClass);
+		Integer result = f.get();
 		System.out.println(result);
 		ex.shutdown();
 		System.out.println("End");

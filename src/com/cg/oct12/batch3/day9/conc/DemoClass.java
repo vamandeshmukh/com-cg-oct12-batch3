@@ -8,10 +8,12 @@ class DemoClass implements Callable<Integer> {
 
 	public DemoClass() {
 		super();
+		System.out.println("zero args constructor");
 	}
 
 	public DemoClass(int num) {
 		super();
+		System.out.println("parameterized constructor");
 		this.num = num;
 	}
 
@@ -20,11 +22,14 @@ class DemoClass implements Callable<Integer> {
 	}
 
 	public void setNum(int num) {
+		System.out.println("setNum");
+
 		this.num = num;
 	}
 
 	@Override
 	public Integer call() throws Exception {
+		System.out.println("call");
 		int localbariable = this.num;
 		return localbariable;
 	}
