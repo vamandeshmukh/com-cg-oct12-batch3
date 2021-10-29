@@ -6,8 +6,8 @@ public class VectorDemo2 {
 
 	public static void main(String[] args) {
 
-		Vector<Integer> v3 = new Vector<>(); // 10, (10*2)
-		Vector<Integer> v2 = new Vector<>(4); // 4, (10*2)
+//		Vector<Integer> v3 = new Vector<>(); // 10, (10*2)
+//		Vector<Integer> v2 = new Vector<>(4); // 4, (10*2)
 		Vector<Integer> v1 = new Vector<>(4, 3); // 4, 3
 
 		v1.add(10);

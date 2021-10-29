@@ -1,8 +1,6 @@
 package com.cg.oct12.batch3.day10.revision;
 
-import java.util.ArrayList;
 import java.util.LinkedList;
-import java.util.List;
 
 public class LinkedListDemo {
 
@@ -21,7 +19,7 @@ public class LinkedListDemo {
 //		System.out.println(list1.get(list1.lastIndexOf(20)));
 		System.out.println(list1.getFirst());
 
-		List<Integer> list2 = new ArrayList<>(); // dynamic array
+//		List<Integer> list2 = new ArrayList<>(); // dynamic array
 
 	}
 

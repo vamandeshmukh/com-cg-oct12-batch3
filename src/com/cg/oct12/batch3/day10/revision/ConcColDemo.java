@@ -1,7 +1,7 @@
 package com.cg.oct12.batch3.day10.revision;
 
-import java.util.ArrayList;
-import java.util.List;
+//import java.util.ArrayList;
+//import java.util.List;
 import java.util.concurrent.CopyOnWriteArrayList;
 
 class ConCol implements Runnable {
