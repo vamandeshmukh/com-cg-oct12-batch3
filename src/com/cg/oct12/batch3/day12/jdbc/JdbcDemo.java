@@ -6,16 +6,16 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 // download postgres jdbc jar and add to classpath 
-// 
 
 // demo to connect to PostgreSQL database and fetch records 
 public class JdbcDemo {
 	public static void main(String[] args) {
 		System.out.println("Start");
+
 		String className = "org.postgresql.Driver";
-		String url = "jdbc:postgresql://localhost:5432/cg12oct";
+		String url = "jdbc:postgresql://localhost:5432/cg12oct"; // check this
 		String user = "postgres";
-		String password = "root";
+		String password = "root"; // check this
 		String sql = "SELECT * FROM emp";
 		Connection con = null;
 		Statement st = null;
